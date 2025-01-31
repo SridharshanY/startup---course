@@ -1,10 +1,9 @@
 import AppLayout from './AppLayout'
-import Home from './Home'
-import Navbar from './components/Navbar'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import About from './pages/About'
 import Register from './pages/Register'
 import Login from './pages/Login'
+import Home from './pages/Home'
 
 const router = createBrowserRouter([
   {
@@ -32,9 +31,7 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-    </div>
+    <RouterProvider router={router} />
   )
 }
 
