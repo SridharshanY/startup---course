@@ -1,7 +1,10 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import userRouter from './routes/userRoutes.js';
 
 const app = express();
+
+app.use('/api/user', userRouter)
 
 const dbUrl = "mongodb+srv://sridharshany2001:BvjmcIXPZ1wQlwTr@cluster0.cu4ho.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
